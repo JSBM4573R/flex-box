@@ -200,21 +200,35 @@ body {
 }
 .videoSobre .container {
   color: #FFF;
-  width: 94%;
-  margin: 0 auto;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .videoSobre .container .videoSobre-video {
-  max-width: 100%;
+  flex-grow: 2;
 }
 .videoSobre .container .videoSobre-sobre {
+  flex-grow: 2;
   font-size: 1.3em;
   line-height: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .videoSobre .container .videoSobre-sobre-title {
   font-size: 1.2em;
   font-weight: bolder;
 }
+.videoSobre .container .videoSobre-sobre-list {
+  flex-grow: 1;
+}
+.videoSobre .container .videoSobre-sobre-item {
+  font-size: 15px;
+}
 .videoSobre .container .videoSobre-sobre .videoSobre-button {
+  bottom: 0;
   border-radius: 8px;
   background-color: #ec6e5a;
   display: block;
@@ -223,6 +237,7 @@ body {
   height: 50px;
   font-size: 0.8em;
   outline: none;
+  cursor: pointer;
 }
 
 @media (min-width: 769px) {
