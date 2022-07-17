@@ -51,8 +51,10 @@ body {
   margin-bottom: 20px;
 }
 .contenidoPrincipal .container {
-  width: 94%;
-  margin: 0 auto;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 .contenidoPrincipal .container .subtitulo {
   font-weight: bold;
@@ -60,7 +62,16 @@ body {
   margin-bottom: 10px;
   text-align: center;
 }
+.contenidoPrincipal .container .contenidoPrincipal-cursos {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .contenidoPrincipal .container .contenidoPrincipal-cursos-link {
+  width: 300px;
   height: 100px;
   background-color: #FFF;
   text-align: center;
