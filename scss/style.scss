@@ -1,6 +1,16 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
 body {
   background-color: #F2F5F7;
   font-family: 'Open Sans', Arial, sans-serif;
+  width: 100%;
+  min-height: 100%;
+  margin: auto;
 }
 
 .headerPrincipal {
@@ -8,8 +18,10 @@ body {
   padding: 20px 0;
 
   .container {
-    width: 94%;
+    width: 90%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
 
   &-titulo {
@@ -24,6 +36,7 @@ body {
   }
 
   &-nav {
+    display: flex;
     &-link {
       padding: 10px;
       margin-bottom: 10px;
@@ -161,15 +174,15 @@ body {
       .container {
         width: 94%;
         margin: 0 auto;
-        .rodapePrincipal-patrocinadores-list {
-          &-link {
-            &-alura {}
+        // .rodapePrincipal-patrocinadores-list {
+        //   &-link {
+        //     &-alura {}
 
-            &-caelum {}
+        //     &-caelum {}
 
-            &-casaDoCodigo {}
-          }
-        }
+        //     &-casaDoCodigo {}
+        //   }
+        // }
 
         .rodapePrincipal-contatoForm {
           margin-top: 20px;
@@ -187,7 +200,7 @@ body {
             margin-bottom: 10px;
           }
 
-          &-fieldset {}
+          // &-fieldset {}
 
           &-emailInput {
             border-top-left-radius: 5px;
@@ -237,9 +250,9 @@ body {
         font-weight: bolder;
       }
 
-      &-list {}
+      // &-list {}
 
-      &-item {}
+      // &-item {}
 
       .videoSobre-button {
         border-radius: 8px;
