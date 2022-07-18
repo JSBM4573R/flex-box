@@ -18,7 +18,7 @@ body {
   padding: 20px 0;
 
   .container {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -56,7 +56,7 @@ body {
   margin-bottom: 20px;
 
   .container {
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -128,7 +128,7 @@ body {
   padding-top: 20px;
 
   .container {
-    width: 70%;
+    width: 80%;
     margin: auto;
     
 
@@ -136,9 +136,11 @@ body {
       min-width: 100%;
       display: flex;
       flex-direction: column;
+
       .subtitulo {
         color: #FFF;
         font-size: 1.5rem;
+        font-weight: bold;
       }
 
       &-list {
@@ -188,65 +190,78 @@ body {
         }
       }
     }
+  }
 
-    .rodapePrincipal-patrocinadores {
-      margin-top: 30px;
-      background: #F2F5F7;
-      padding: 20px 0;
+  .rodapePrincipal-patrocinadores {
+    margin-top: 30px;
+    background: #F2F5F7;
+    padding: 20px 0;
 
-      .container {
-        width: 94%;
-        margin: 0 auto;
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .rodapePrincipal-patrocinadores-list {
         display: flex;
-        // .rodapePrincipal-patrocinadores-list {
-        //   &-link {
-        //     &-alura {}
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        // &-link {
+        //   &-alura {}
 
-        //     &-caelum {}
+        //   &-caelum {}
 
-        //     &-casaDoCodigo {}
-        //   }
+        //   &-casaDoCodigo {}
         // }
+      }
 
-        .rodapePrincipal-contatoForm {
-          margin-top: 20px;
-          text-align: center;
+      .rodapePrincipal-contatoForm {
+        text-align: center;
+        display: flex;
 
-          & label[for=email-contato] {
-            font-weight: bold;
-            font-size: 14px;
-            color: #000;
-            margin-bottom: 5px;
-            display: block;
-          }
+        & label[for=email-contato] {
+          font-weight: bold;
+          font-size: 14px;
+          color: #000;
+          margin-bottom: 5px;
+          display: block;
+        }
 
-          &-legend {
-            margin-bottom: 10px;
-          }
+        &-legend {
+          width: 100%;
+          margin-bottom: 10px;
+          display: flex;
+          justify-content: flex-start;
+        }
 
-          // &-fieldset {}
+        &-fieldset {
+          display: flex;
+        }
 
-          &-emailInput {
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
-            padding: 10px;
-          }
+        &-emailInput {
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+          padding: 10px;
+        }
 
-          &-submit {
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-            background-color: #4DBA7A;
-            color: #FFF;
-            cursor: pointer;
-          }
+        &-submit {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          background-color: #4DBA7A;
+          color: #FFF;
+          cursor: pointer;
+        }
 
-          &-emailInput,
-          &-submit {
-            outline: 0;
-            border: 1px solid #4DBA7A;
-            box-sizing: border-box;
-            font-size: 16px;
-          }
+        &-emailInput,
+        &-submit {
+          outline: 0;
+          border: 1px solid #4DBA7A;
+          box-sizing: border-box;
+          font-size: 16px;
         }
       }
     }
@@ -260,14 +275,15 @@ body {
 
   .container {
     color: #FFF;
-    width: 70%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
 
     .videoSobre-video {
-      flex-grow: 2;
+      flex-grow: 1;
+      min-height: 350px;
     }
 
     .videoSobre-sobre {
@@ -302,6 +318,11 @@ body {
         font-size: .8em;
         outline: none;
         cursor: pointer;
+        transition: .3s ease;
+
+        &:hover {
+          background-color: #e38677;
+        }
       }
     }
   }

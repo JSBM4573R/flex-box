@@ -18,7 +18,7 @@ body {
   padding: 20px 0;
 }
 .headerPrincipal .container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -51,7 +51,7 @@ body {
   margin-bottom: 20px;
 }
 .contenidoPrincipal .container {
-  width: 90%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -113,7 +113,7 @@ body {
   padding-top: 20px;
 }
 .rodapePrincipal .container {
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 .rodapePrincipal .container .rodapePrincipal-navMap {
@@ -124,6 +124,7 @@ body {
 .rodapePrincipal .container .rodapePrincipal-navMap .subtitulo {
   color: #FFF;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 .rodapePrincipal .container .rodapePrincipal-navMap-list {
   display: flex;
@@ -164,43 +165,58 @@ body {
   margin-top: 10px;
   font-size: 0.9em;
 }
-.rodapePrincipal .container .rodapePrincipal-patrocinadores {
+.rodapePrincipal .rodapePrincipal-patrocinadores {
   margin-top: 30px;
   background: #F2F5F7;
   padding: 20px 0;
 }
-.rodapePrincipal .container .rodapePrincipal-patrocinadores .container {
-  width: 94%;
+.rodapePrincipal .rodapePrincipal-patrocinadores .container {
+  width: 80%;
   margin: 0 auto;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.rodapePrincipal .container .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm {
-  margin-top: 20px;
+.rodapePrincipal .rodapePrincipal-patrocinadores .container .rodapePrincipal-patrocinadores-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.rodapePrincipal .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm {
   text-align: center;
+  display: flex;
 }
-.rodapePrincipal .container .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm label[for=email-contato] {
+.rodapePrincipal .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm label[for=email-contato] {
   font-weight: bold;
   font-size: 14px;
   color: #000;
   margin-bottom: 5px;
   display: block;
 }
-.rodapePrincipal .container .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm-legend {
+.rodapePrincipal .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm-legend {
+  width: 100%;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
 }
-.rodapePrincipal .container .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm-emailInput {
+.rodapePrincipal .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm-fieldset {
+  display: flex;
+}
+.rodapePrincipal .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm-emailInput {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 10px;
 }
-.rodapePrincipal .container .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm-submit {
+.rodapePrincipal .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm-submit {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #4DBA7A;
   color: #FFF;
   cursor: pointer;
 }
-.rodapePrincipal .container .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm-emailInput, .rodapePrincipal .container .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm-submit {
+.rodapePrincipal .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm-emailInput, .rodapePrincipal .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm-submit {
   outline: 0;
   border: 1px solid #4DBA7A;
   box-sizing: border-box;
@@ -214,14 +230,15 @@ body {
 }
 .videoSobre .container {
   color: #FFF;
-  width: 70%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .videoSobre .container .videoSobre-video {
-  flex-grow: 2;
+  flex-grow: 1;
+  min-height: 350px;
 }
 .videoSobre .container .videoSobre-sobre {
   flex-grow: 2;
@@ -252,6 +269,10 @@ body {
   font-size: 0.8em;
   outline: none;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+.videoSobre .container .videoSobre-sobre .videoSobre-button:hover {
+  background-color: #e38677;
 }
 
 @media (min-width: 769px) {
