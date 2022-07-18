@@ -37,6 +37,7 @@ body {
 
   &-nav {
     display: flex;
+
     &-link {
       padding: 10px;
       margin-bottom: 10px;
@@ -59,6 +60,7 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
+
     .subtitulo {
       font-weight: bold;
       font-size: 32px;
@@ -73,6 +75,7 @@ body {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+
       &-link {
         width: 300px;
         height: 100px;
@@ -125,14 +128,25 @@ body {
   padding-top: 20px;
 
   .container {
-    width: 94%;
-    margin: 0 auto;
+    width: 70%;
+    margin: auto;
+    
+
     .rodapePrincipal-navMap {
+      min-width: 100%;
+      display: flex;
+      flex-direction: column;
       .subtitulo {
         color: #FFF;
+        font-size: 1.5rem;
       }
 
       &-list {
+        display: flex;
+        flex-direction: column;
+        height: 260px;
+        flex-wrap: wrap;
+
         .navmap-list-title {
           font-weight: 700;
           font-size: 1.3em;
@@ -183,6 +197,7 @@ body {
       .container {
         width: 94%;
         margin: 0 auto;
+        display: flex;
         // .rodapePrincipal-patrocinadores-list {
         //   &-link {
         //     &-alura {}
@@ -262,6 +277,7 @@ body {
       text-align: center;
       display: flex;
       flex-direction: column;
+
       &-title {
         font-size: 1.2em;
         font-weight: bolder;

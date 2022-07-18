@@ -113,11 +113,23 @@ body {
   padding-top: 20px;
 }
 .rodapePrincipal .container {
-  width: 94%;
-  margin: 0 auto;
+  width: 70%;
+  margin: auto;
+}
+.rodapePrincipal .container .rodapePrincipal-navMap {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .rodapePrincipal .container .rodapePrincipal-navMap .subtitulo {
   color: #FFF;
+  font-size: 1.5rem;
+}
+.rodapePrincipal .container .rodapePrincipal-navMap-list {
+  display: flex;
+  flex-direction: column;
+  height: 260px;
+  flex-wrap: wrap;
 }
 .rodapePrincipal .container .rodapePrincipal-navMap-list .navmap-list-title {
   font-weight: 700;
@@ -160,6 +172,7 @@ body {
 .rodapePrincipal .container .rodapePrincipal-patrocinadores .container {
   width: 94%;
   margin: 0 auto;
+  display: flex;
 }
 .rodapePrincipal .container .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm {
   margin-top: 20px;
