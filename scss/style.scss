@@ -18,7 +18,7 @@ body {
   padding: 20px 0;
 
   .container {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -240,7 +240,8 @@ body {
 
 .videoSobre {
   background-color: #5E9EDC;
-  padding: 25px 0;
+  padding: 40px 0;
+  margin: 80px 0;
 
   .container {
     color: #FFF;
@@ -249,7 +250,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+
     .videoSobre-video {
       flex-grow: 2;
     }
@@ -271,7 +272,7 @@ body {
       }
 
       &-item {
-        font-size: 15px;
+        font-size: 1rem;
       }
 
       .videoSobre-button {
