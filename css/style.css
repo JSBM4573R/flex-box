@@ -339,6 +339,12 @@ body {
   .headerPrincipal .container .headerPrincipal-nav {
     flex-direction: column;
   }
+  .contenidoPrincipal-cursos {
+    width: 100%;
+  }
+  .contenidoPrincipal-cursos-link {
+    min-width: 85%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

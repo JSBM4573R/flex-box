@@ -414,4 +414,11 @@ body {
       }
     }
   }
+  .contenidoPrincipal-cursos {
+    width: 100%;
+
+    &-link {
+      min-width: 85%;
+    }
+  }
 }
