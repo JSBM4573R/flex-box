@@ -421,4 +421,48 @@ body {
       min-width: 85%;
     }
   }
+  .videoSobre {
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      .videoSobre-video {
+        max-width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+    .videoSobre-sobre {
+      .videoSobre-button {
+        margin-top: 20px;
+      }
+    }
+  }
+  .rodapePrincipal {
+    .container {
+      .rodapePrincipal-navMap{
+        &-list {
+          flex-wrap: nowrap;
+          height: 100%;
+        }
+      }
+    }
+    .rodapePrincipal-patrocinadores {
+      &-list {
+        width: 100%;
+        justify-content: space-around;
+        align-items: initial;
+      }
+      .container {
+        min-width: 100%;
+        flex-direction: column;
+        .rodapePrincipal-contatoForm {
+          margin-top: 20px;
+          &-legend {
+            justify-content: center;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
 }

@@ -345,6 +345,38 @@ body {
   .contenidoPrincipal-cursos-link {
     min-width: 85%;
   }
+  .videoSobre .container {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+  .videoSobre .container .videoSobre-video {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .videoSobre .videoSobre-sobre .videoSobre-button {
+    margin-top: 20px;
+  }
+  .rodapePrincipal .container .rodapePrincipal-navMap-list {
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+  .rodapePrincipal .rodapePrincipal-patrocinadores-list {
+    width: 100%;
+    justify-content: space-around;
+    align-items: initial;
+  }
+  .rodapePrincipal .rodapePrincipal-patrocinadores .container {
+    min-width: 100%;
+    flex-direction: column;
+  }
+  .rodapePrincipal .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm {
+    margin-top: 20px;
+  }
+  .rodapePrincipal .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm-legend {
+    justify-content: center;
+    font-weight: bold;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
